@@ -5,10 +5,6 @@ class Calculations
 {
 public:
 	Calculations();
-
-	bool doesFileExist(const char *fileName);
-	void createFolder(const char * path);
-	void makeSaveFiles();
 	
 	void runProgram();
 

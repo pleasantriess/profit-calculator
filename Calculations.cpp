@@ -6,7 +6,6 @@
 Calculations::Calculations()
 {
 	
-
 }
 
 
@@ -34,11 +33,11 @@ void Calculations::getUserChoice()
 {
 	int choice = 0;
 
-	std::cout << "You can : "
-			  << "1: Add a new plant            "
-			  << "2: Find a plant |Not working| "
-			  << "3: Edit a plant |Not working| "
-			  << "What do you want to do ? :    ";
+	std::cout << "You can : \n"
+			  << "1: Add a new plant           \n"
+			  << "2: Find a plant |Not working|\n"
+			  << "3: Edit a plant |Not working|\n\n"
+			  << "  What do you want to do ? :   \n";
 
 
 	std::cin >> choice;
@@ -51,6 +50,7 @@ void Calculations::getUserChoice()
 
 	case 2:
 		// WIP
+		
 	case 3:
 		// WIP
 		break;
@@ -62,7 +62,7 @@ void Calculations::getUserChoice()
 
 void Calculations::getPlantInfo()
 {
-	std::string plantName = ""; // Name of plant
+	std::string plantName = " "; // Name of plant
 	double gallons = 0.0; // Amount of gallons the plant pot is
 
 	int numberOfPlants = 0; // Number of plants the user wants to input
@@ -91,29 +91,6 @@ void Calculations::getPlantInfo()
 void Calculations::getDiscount()
 {
 
-	// wanted to use bool but it just won't cooperate. I will look this up later
-	// bool discountyn = false;
-
-	/*
-	Never mind im just braindead
-
-	// My last hope, strings, will not work because the if statements only take booleans. RIP.
-	std::string discountyn = " ";
-
-	std::string y = "y";
-	std::string Y = "Y";
-	std::string n = "n";
-	std::string N = "N";
-	*/
-
-	/*
-	I wanted to use chars but its unsafe
-	const char y = 'y';
-	const char Y = 'Y';
-	const char n = 'n';
-	const char N = 'N';
-	*/
-
 	std::string discountyn = " "; // Does the client want a discount (y/n)
 
 	std::cout << "Does the client want a discount? : " /*<< plantName */ << "? (y/n): ";
@@ -133,11 +110,6 @@ void Calculations::getDiscount()
 
 
 	}
-
-	
-
-
-
 }
 
 
@@ -183,7 +155,7 @@ void Calculations::getPrices()
 
 Calculations::~Calculations()
 {
-	std::cout << "Object destroyed" << std::endl;
+	
 	
 	
 	Sleep(2000);
