@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  Calculations.cpp
+c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(30): error C2664: 'BOOL CreateDirectoryW(LPCWSTR,LPSECURITY_ATTRIBUTES)': cannot convert argument 1 from 'const char *' to 'LPCWSTR'
+  c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(30): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
+  ProfitCalculator.cpp
+  Generating Code...

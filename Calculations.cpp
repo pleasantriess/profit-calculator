@@ -8,9 +8,6 @@ Calculations::Calculations()
 	
 }
 
-
-
-
 // Prototyping in the correct order they will be used in
 	/*void getDiscount();
 	int getPrices();
@@ -24,7 +21,6 @@ void Calculations::runProgram()
 	getPlantInfo();
 	getDiscount();
 	getPrices();
-
 }
 
 // Asks the user if they want to add a plant, look at plants 
@@ -39,7 +35,6 @@ void Calculations::getUserChoice()
 			  << "3: Edit a plant |Not working|\n\n"
 			  << "  What do you want to do ? :   \n";
 
-
 	std::cin >> choice;
 
 	switch (choice)
@@ -49,12 +44,11 @@ void Calculations::getUserChoice()
 		break;
 
 	case 2:
-		// WIP
+		
 		
 	case 3:
 		// WIP
 		break;
-
 	}
 }
 
@@ -91,6 +85,7 @@ void Calculations::getPlantInfo()
 void Calculations::getDiscount()
 {
 
+
 	std::string discountyn = " "; // Does the client want a discount (y/n)
 
 	std::cout << "Does the client want a discount? : " /*<< plantName */ << "? (y/n): ";
@@ -107,8 +102,6 @@ void Calculations::getDiscount()
 		std::cout << "No? Alright.\n";
 
 		std::cin.get();
-
-
 	}
 }
 
@@ -140,7 +133,6 @@ void Calculations::getPrices()
 	std::cin >> contractorsPrice;
 	std::cout << std::endl;
 
-
 	// Calculations
 
 	profitMargin = (originalProductPrice - contractorsPrice) + clientPrice;
@@ -155,7 +147,6 @@ void Calculations::getPrices()
 
 Calculations::~Calculations()
 {
-	
 	
 	
 	Sleep(2000);
