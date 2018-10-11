@@ -14,41 +14,13 @@ Calculations::Calculations()
 
 // Prototyping in the correct order they will be used in
 	/*void getDiscount();
-	int  getPrices();
+	int getPrices();
 	void getPlantInfo(); */
-
-// Pasted folder code
-
-bool Calculations::doesFileExist(const char *fileName)
-{
-	std::ifstream infile(fileName);
-	return infile.good();
-}
-
-void Calculations::createFolder(const char *path) 
-{
-	if (!CreateDirectory(path, NULL)) 
-	{
-		return;
-	}
-}
-
-void Calculations::makeSaveFiles()
-{
-	createFolder("profitcalc");
-	createFolder("profitcalc\\plants");
-
-	if (!doesFileExist("profitcalc\\plants\\profitcalcs_plants.txt")) 
-	{
-		std::ofstream("profitcalc\\plants\\profitcalcs_plants.txt");
-	}
-}
 
 
 // Quick function to call all of the other functions
 void Calculations::runProgram()
 {
-	Debugging();
 	getUserChoice();
 	getPlantInfo();
 	getDiscount();
@@ -56,25 +28,34 @@ void Calculations::runProgram()
 
 }
 
-
-void Calculations::Debugging()
-{
-	double *newobj = new double;
-
-
-	std::cout << newobj;
-	
-}
-
 // Asks the user if they want to add a plant, look at plants 
 
 void Calculations::getUserChoice()
 {
-	//std::cout << "What do you want to do? ";
+	int choice = 0;
 
-	
-	
+	std::cout << "You can : "
+			  << "1: Add a new plant            "
+			  << "2: Find a plant |Not working| "
+			  << "3: Edit a plant |Not working| "
+			  << "What do you want to do ? :    ";
 
+
+	std::cin >> choice;
+
+	switch (choice)
+	{
+	case 1:
+		runProgram();
+		break;
+
+	case 2:
+		// WIP
+	case 3:
+		// WIP
+		break;
+
+	}
 }
 
 // Gets the plant name, size and type (perennial/ annual)
