@@ -25,7 +25,6 @@ void Calculations::runProgram()
 	getPlantInfo();
 	getDiscount();
 	getPrices();
-
 }
 
 // Asks the user if they want to add a plant, look at plants 
@@ -40,7 +39,6 @@ void Calculations::getUserChoice()
 			  << "3: Edit a plant |Not working| "
 			  << "What do you want to do ? :    ";
 
-
 	std::cin >> choice;
 
 	switch (choice)
@@ -54,7 +52,6 @@ void Calculations::getUserChoice()
 	case 3:
 		// WIP
 		break;
-
 	}
 }
 
@@ -94,26 +91,6 @@ void Calculations::getDiscount()
 	// wanted to use bool but it just won't cooperate. I will look this up later
 	// bool discountyn = false;
 
-	/*
-	Never mind im just braindead
-
-	// My last hope, strings, will not work because the if statements only take booleans. RIP.
-	std::string discountyn = " ";
-
-	std::string y = "y";
-	std::string Y = "Y";
-	std::string n = "n";
-	std::string N = "N";
-	*/
-
-	/*
-	I wanted to use chars but its unsafe
-	const char y = 'y';
-	const char Y = 'Y';
-	const char n = 'n';
-	const char N = 'N';
-	*/
-
 	std::string discountyn = " "; // Does the client want a discount (y/n)
 
 	std::cout << "Does the client want a discount? : " /*<< plantName */ << "? (y/n): ";
@@ -130,14 +107,7 @@ void Calculations::getDiscount()
 		std::cout << "No? Alright.\n";
 
 		std::cin.get();
-
-
 	}
-
-	
-
-
-
 }
 
 
@@ -168,7 +138,6 @@ void Calculations::getPrices()
 	std::cin >> contractorsPrice;
 	std::cout << std::endl;
 
-
 	// Calculations
 
 	profitMargin = (originalProductPrice - contractorsPrice) + clientPrice;
@@ -184,7 +153,6 @@ void Calculations::getPrices()
 Calculations::~Calculations()
 {
 	std::cout << "Object destroyed" << std::endl;
-	
 	
 	Sleep(2000);
 }
