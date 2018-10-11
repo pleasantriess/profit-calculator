@@ -9,9 +9,6 @@ Calculations::Calculations()
 
 }
 
-
-
-
 // Prototyping in the correct order they will be used in
 	/*void getDiscount();
 	int getPrices();
