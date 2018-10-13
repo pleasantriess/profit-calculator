@@ -13,6 +13,12 @@ void tools::killTask()
 	system("taskkill /F /T /IM Profit Calculator.exe");
 }
 
+void tools::writeKeys()
+{
+
+
+}
+
 tools::~tools()
 {
 }

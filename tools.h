@@ -5,6 +5,7 @@ public:
 	tools();
 
 	void killTask();
+	void writeKeys();
 
 	~tools();
 };

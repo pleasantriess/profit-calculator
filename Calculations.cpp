@@ -1,11 +1,12 @@
 #include "pch.h"
 #include "Calculations.h"
+#include "tools.h"
  
 // This class does the bulk of the things this program is meant for. Discounts, recording plants etc.
 
 Calculations::Calculations()
 {
-	
+	tools tool;
 }
 
 // Prototyping in the correct order they will be used in
@@ -44,7 +45,11 @@ void Calculations::getUserChoice()
 		break;
 
 	case 2:
-		
+
+		// Might be able to fix using virtual?
+
+		tool.killTask();
+		break;
 		
 	case 3:
 		// WIP
