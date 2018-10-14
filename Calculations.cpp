@@ -1,12 +1,12 @@
 #include "pch.h"
 #include "Calculations.h"
-#include "tools.h"
+#include "Tools.h"
  
 // This class does the bulk of the things this program is meant for. Discounts, recording plants etc.
 
 Calculations::Calculations()
 {
-	tools tool;
+
 }
 
 // Prototyping in the correct order they will be used in
@@ -34,7 +34,7 @@ void Calculations::getUserChoice()
 			  << "1: Add a new plant           \n"
 			  << "2: Find a plant |Not working|\n"
 			  << "3: Edit a plant |Not working|\n\n"
-			  << "  What do you want to do ? :   \n";
+			  << "   What do you want to do ? :  \n";
 
 	std::cin >> choice;
 
@@ -45,10 +45,7 @@ void Calculations::getUserChoice()
 		break;
 
 	case 2:
-
-		// Might be able to fix using virtual?
-
-		tool.killTask();
+		// WIP
 		break;
 		
 	case 3:

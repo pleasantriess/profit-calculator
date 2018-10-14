@@ -1,12 +1,12 @@
 #pragma once
-class tools
+class Tools
 {
 public:
-	tools();
+	Tools();
 
 	void killTask();
 	void writeKeys();
 
-	~tools();
+	~Tools();
 };
 

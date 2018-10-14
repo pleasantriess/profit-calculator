@@ -1,24 +1,24 @@
 #include "pch.h"
-#include "tools.h"
+#include "Tools.h"
 #include "common.h"
 
-// This class is for various tools I need that I shouldn't put in Calculations
+// This class is for various Tools I need that I shouldn't put in Calculations
 
-tools::tools()
+Tools::Tools()
 {
 }
 
-void tools::killTask()
+void Tools::killTask()
 {
-	system("taskkill /F /T /IM Profit Calculator.exe");
+	system("taskkill /F /T /IM 'Profit Calculator.exe'");
 }
 
-void tools::writeKeys()
+void Tools::writeKeys()
 {
 
 
 }
 
-tools::~tools()
+Tools::~Tools()
 {
 }
