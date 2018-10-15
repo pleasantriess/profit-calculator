@@ -7,7 +7,6 @@
 
 Tools::Tools()
 {
-	char x = N;
 }
 
 void Tools::killTask()
@@ -15,7 +14,7 @@ void Tools::killTask()
 	system("taskkill /F /T /IM 'Profit Calculator.exe'");
 }
 
-void Tools::writeKeys(LPCSTR keys)
+void Tools::writeKeys(const char *keys)
 {
 		std::ofstream logfile; // Make logfile
 		logfile.open("Plants.txt", std::fstream::app); // Opens txt file

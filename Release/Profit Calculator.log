@@ -1,7 +1,8 @@
-﻿  tools.cpp
-  Generating code
-  2 of 124 functions ( 1.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  Profit Calculator.vcxproj -> C:\Users\Scott\Desktop\coding\github-repos\profit-calculator\Release\Profit Calculator.exe
+﻿  Calculations.cpp
+c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(46): error C2065: 'plantName': undeclared identifier
+c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(83): error C2660: 'Calculations::getPlantInfo': function does not take 0 arguments
+  c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(61): note: see declaration of 'Calculations::getPlantInfo'
+  ProfitCalculator.cpp
+c:\users\scott\desktop\coding\github-repos\profit-calculator\profitcalculator.cpp(33): error C2039: 'runProgram': is not a member of 'Calculations'
+  c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.h(4): note: see declaration of 'Calculations'
+  tools.cpp

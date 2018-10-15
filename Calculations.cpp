@@ -6,7 +6,7 @@
 
 Calculations::Calculations()
 {
-
+	Tools tool;
 }
 
 // Prototyping in the correct order they will be used in
@@ -43,11 +43,11 @@ void Calculations::getUserChoice()
 	switch (choice)
 	{
 	case 1:
-		runProgram();
+		getPlantInfo(plantName);
 		break;
 
 	case 2:
-		// WIP
+		
 		break;
 		
 	case 3:
