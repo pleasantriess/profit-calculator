@@ -6,15 +6,15 @@ class Calculations
 public:
 	Calculations();
 	
-	void runProgram();
+	//void runProgram();
 
 	void getUserChoice();
 
-	void getPlantInfo();
+	void getPlantInfo(std::string plantName);
 	void getDiscount();
 	void getPrices();
 
-	void Debugging();
+	//void Debugging();
 
 	~Calculations();
 

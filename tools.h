@@ -5,7 +5,7 @@ public:
 	Tools();
 
 	void killTask();
-	void writeKeys();
+	void writeKeys(LPCSTR keys);
 
 	~Tools();
 };

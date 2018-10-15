@@ -16,13 +16,15 @@ Calculations::Calculations()
 
 
 // Quick function to call all of the other functions
+/*
 void Calculations::runProgram()
 {
 	getUserChoice();
-	getPlantInfo();
+	getPlantInfo(std::string plantName);
 	getDiscount();
 	getPrices();
 }
+*/
 
 // Asks the user if they want to add a plant, look at plants 
 
@@ -56,9 +58,9 @@ void Calculations::getUserChoice()
 
 // Gets the plant name, size and type (perennial/ annual)
 
-void Calculations::getPlantInfo()
+void Calculations::getPlantInfo(std::string plantName) //<- Name of plant
 {
-	std::string plantName = " "; // Name of plant
+	 // Name of plant
 	double gallons = 0.0; // Amount of gallons the plant pot is
 
 	int numberOfPlants = 0; // Number of plants the user wants to input
