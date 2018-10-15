@@ -43,7 +43,7 @@ void Calculations::getUserChoice()
 	switch (choice)
 	{
 	case 1:
-		getPlantInfo(plantName);
+		getPlantInfo();
 		break;
 
 	case 2:
