@@ -2,11 +2,11 @@
 #include "Calculations.h"
 #include "Tools.h"
  
-// This class does the bulk of the things this program is meant for. Discounts, recording plants etc.
+
 
 Calculations::Calculations()
 {
-	Tools tool;
+	Tools tools;
 }
 
 // Prototyping in the correct order they will be used in
@@ -16,21 +16,21 @@ Calculations::Calculations()
 
 
 // Quick function to call all of the other functions
-/*
-void Calculations::runProgram()
+
+int Calculations::runProgram()
 {
 	getUserChoice();
-	getPlantInfo(std::string plantName);
+	getPlantInfo();
 	getDiscount();
 	getPrices();
 }
-*/
 
 // Asks the user if they want to add a plant, look at plants 
 
 void Calculations::getUserChoice()
 {
 	int choice = 0;
+
 
 	std::cout << "You can : \n"
 			  << "1: Add a new plant           \n"
@@ -58,8 +58,11 @@ void Calculations::getUserChoice()
 
 // Gets the plant name, size and type (perennial/ annual)
 
-void Calculations::getPlantInfo(std::string plantName) //<- Name of plant
+void Calculations::getPlantInfo() // <- Name of plant
 {
+	std::string plantName;
+
+	
 	 // Name of plant
 	double gallons = 0.0; // Amount of gallons the plant pot is
 
@@ -80,7 +83,7 @@ void Calculations::getPlantInfo(std::string plantName) //<- Name of plant
 		std::cout << "What is the plant size?: ";
 		std::cin >> gallons;
 
-		getPlantInfo();
+		//getPlantInfo(plantName);
 	}
 }
 
@@ -88,7 +91,6 @@ void Calculations::getPlantInfo(std::string plantName) //<- Name of plant
 
 void Calculations::getDiscount()
 {
-
 
 	std::string discountyn = " "; // Does the client want a discount (y/n)
 

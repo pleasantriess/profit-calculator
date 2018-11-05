@@ -4,17 +4,16 @@
 class Calculations
 {
 public:
+
 	Calculations();
 	
-	//void runProgram();
+	int runProgram();
 
 	void getUserChoice();
 
-	void getPlantInfo(std::string plantName);
+	void getPlantInfo();
 	void getDiscount();
 	void getPrices();
-
-	//void Debugging();
 
 	~Calculations();
 

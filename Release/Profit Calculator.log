@@ -1,8 +1,4 @@
-﻿  Calculations.cpp
-c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(46): error C2065: 'plantName': undeclared identifier
-c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(83): error C2660: 'Calculations::getPlantInfo': function does not take 0 arguments
-  c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.cpp(61): note: see declaration of 'Calculations::getPlantInfo'
-  ProfitCalculator.cpp
-c:\users\scott\desktop\coding\github-repos\profit-calculator\profitcalculator.cpp(33): error C2039: 'runProgram': is not a member of 'Calculations'
-  c:\users\scott\desktop\coding\github-repos\profit-calculator\calculations.h(4): note: see declaration of 'Calculations'
+﻿  ProfitCalculator.cpp
   tools.cpp
+c:\users\scott\desktop\coding\github-repos\profit-calculator\tools.cpp(32): error C2664: 'BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)': cannot convert argument 1 from 'const char *' to 'LPCWSTR'
+  c:\users\scott\desktop\coding\github-repos\profit-calculator\tools.cpp(32): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
