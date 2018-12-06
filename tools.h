@@ -4,9 +4,13 @@ class Tools
 public:
 	Tools();
 
-	void CreateProc(const char *CreateProcIn);
-	void killTask(const char * killTaskIn);
-	void writeKeys(const char *keys);
+	//void CreateProc(LPCWSTR CreateProcIn);
+
+	void KillTask  (const char * killTaskIn);
+
+	void WriteKeys (std::string &variableOut);
+
+	void ReadKeys(std::string &variableIN, int tellPlantsChoice);
 
 	~Tools();
 };

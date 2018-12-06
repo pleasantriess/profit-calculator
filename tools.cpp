@@ -9,7 +9,8 @@ Tools::Tools()
 {
 }
 
-void Tools::CreateProc(const char *CreateProcIn)
+/*
+void Tools::CreateProc(LPCWSTR CreateProcIn)
 {
 	// Not using the below in func params because it would be so hecking long.
 
@@ -56,18 +57,48 @@ void Tools::CreateProc(const char *CreateProcIn)
 
 }
 
-void Tools::killTask(const char *killTaskIn)
+*/
+
+void Tools::KillTask(const char *killTaskIn)
 {
 	system(killTaskIn);
 }
 
-void Tools::writeKeys(const char *keys)
+void Tools::WriteKeys(std::string &variableOUT)
 {
-		std::ofstream logfile; // Make logfile
-		logfile.open("Plants.txt", std::fstream::app); // Opens txt file
-		logfile << keys; // Writes input to txt file
-		logfile.close(); // Close file
+		// OFSTREAM OUTPUTS TO TXT FILE
+		std::ofstream write; 
+
+		write.open("Plants.txt");  // Opens Plants.txt
+
+		if (write.fail())
+			std::cerr << "Error Opening File" << std::endl;
+
+		write << variableOUT; // Writes output to txt file
+
+		write.close(); // Close file
 }
+
+void Tools::ReadKeys(std::string &variableIN, int tellPlantsChoice)
+{
+	std::ifstream read;
+	
+	read.open("Plants.txt");
+
+	read >> variableIN;
+
+
+	if (tellPlantsChoice == 1)
+	{
+		for (int amountOfPlants = 0; !read.eof(); amountOfPlants++)
+		{
+			read >> variableIN;
+		}
+	}
+
+	read.close();
+}
+
 
 Tools::~Tools()
 {

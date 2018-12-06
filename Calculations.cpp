@@ -150,7 +150,6 @@ void Calculations::getPrices()
 } // Always use this after discount
 
 
-
 Calculations::~Calculations()
 {
 	
