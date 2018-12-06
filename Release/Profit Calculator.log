@@ -1,4 +1,0 @@
-﻿  ProfitCalculator.cpp
-  tools.cpp
-c:\users\scott\desktop\coding\github-repos\profit-calculator\tools.cpp(32): error C2664: 'BOOL CreateProcessW(LPCWSTR,LPWSTR,LPSECURITY_ATTRIBUTES,LPSECURITY_ATTRIBUTES,BOOL,DWORD,LPVOID,LPCWSTR,LPSTARTUPINFOW,LPPROCESS_INFORMATION)': cannot convert argument 1 from 'const char *' to 'LPCWSTR'
-  c:\users\scott\desktop\coding\github-repos\profit-calculator\tools.cpp(32): note: Types pointed to are unrelated; conversion requires reinterpret_cast, C-style cast or function-style cast
