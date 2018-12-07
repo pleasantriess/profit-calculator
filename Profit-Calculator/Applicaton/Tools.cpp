@@ -23,6 +23,7 @@ void Tools::StartingAnimation()
 
 
 	system("cls");
+
 	std::cout << "Welcome to Profit Calculator v2 !" << std::endl;
 
 	std::cout << "\nChange Log 2018\n"
