@@ -26,7 +26,7 @@
 
 // Windows API
 
-#include <windows>
+#include <windows.h>
 
 
 #endif //PCH_H
