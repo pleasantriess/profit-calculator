@@ -26,9 +26,14 @@ int main()
 
 	Calculator *program = new Calculator;
 
+
 	tools->StartingAnimation();
 
 	program->RunProgram(0);
+
+
+	delete tools;
+	delete program;
 
 	return 0;
 }
