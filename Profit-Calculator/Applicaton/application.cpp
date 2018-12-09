@@ -28,7 +28,7 @@ int main()
 
 	tools->StartingAnimation();
 
-	program->runProgram();
+	program->RunProgram(0);
 
 	return 0;
 }

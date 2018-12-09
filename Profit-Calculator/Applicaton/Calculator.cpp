@@ -6,20 +6,39 @@ Calculator::Calculator()
 {
 }
 
-int Calculator::runProgram()
+int Calculator::RunProgram(int section)
 {
-	getUserChoice();
-	getPlantInfo();
-	getDiscount();
-	getPrices();
 
+	if (section == 0)
+	{
+		GetUserChoice();
+		GetPlantInfo();
+		GetDiscount();
+		GetPrices();
+	}
+
+	else if (section == 1)
+	{
+		GetPlantInfo();
+	}
+
+	else if (section == 2)
+	{
+		GetDiscount();
+	}
+
+	else if (section == 3)
+	{
+		GetPrices();
+	}
+	
 	return 0;
 }
 
 
 // Asks the user if they want to add a plant, look at plants 
 
-void Calculator::getUserChoice()
+void Calculator::GetUserChoice()
 {
 	using std::cout;
 	using std::cin;
@@ -30,14 +49,17 @@ void Calculator::getUserChoice()
    cout << "1: Add a new plant           \n"
 		<< "2: Find a plant |Not working|\n"
 		<< "3: Edit a plant |Not working|\n\n"
-		<< "   What do you want to do ? :  \n";
+
+		<< "What do you want to do ? : ";
 
 	cin >> choice;
+
+	system("cls");
 
 	switch (choice)
 	{
 	case 1:
-		getPlantInfo();
+		RunProgram(1);
 		break;
 
 	case 2:
@@ -52,7 +74,7 @@ void Calculator::getUserChoice()
 
 // Gets the plant name, size and type (perennial/ annual)
 
-void Calculator::getPlantInfo() // Name of plant
+void Calculator::GetPlantInfo() // Name of plant
 {
 	using std::cout;
 	using std::cin;
@@ -65,7 +87,7 @@ void Calculator::getPlantInfo() // Name of plant
 	int numberOfPlants = 0; // Number of plants the user wants to input
 
 
-	system("cls");
+	//system("cls");
 
 
 	cout << "How many plants do you want to record? : ";
@@ -86,7 +108,7 @@ void Calculator::getPlantInfo() // Name of plant
 
 // Asks if the client wants a discount. If so, calculate
 
-void Calculator::getDiscount()
+void Calculator::GetDiscount()
 {
 	using std::cout;
 	using std::cin;
@@ -113,7 +135,7 @@ void Calculator::getDiscount()
 
 // Asks if the client wants a discount. If so, calculate
 
-void Calculator::getPrices()
+void Calculator::GetPrices()
 {
 	using std::cout;
 	using std::cin;

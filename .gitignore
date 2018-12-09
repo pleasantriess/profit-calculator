@@ -3,6 +3,10 @@
 *.pch
 *.obj
 *.exe
+*.log
+*.idb
+*.pdb
+*.ilk
 Release/ProfitCalculator.obj
 .vs/Profit Calculator/v15/ipch/708c4ef89d8387fe.ipch
 .vs/Profit Calculator/v15/Browse.VC.opendb
