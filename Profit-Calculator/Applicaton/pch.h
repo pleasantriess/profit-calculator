@@ -7,6 +7,7 @@
 #include <memory>
 #include <thread>
 #include <utility>
+#include <cmath>
 
 // Data Structures
 

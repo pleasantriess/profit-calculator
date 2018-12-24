@@ -15,8 +15,6 @@ public:
 	// Reads variables from a text file named Plants.txt
 	void ReadKeys(std::string &var, int tellPlantsChoice);
 	
-
 	~Tools();
 
 };
-

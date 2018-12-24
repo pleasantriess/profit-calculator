@@ -35,7 +35,6 @@ int Calculator::RunProgram(int section)
 	return 0;
 }
 
-
 // Asks the user if they want to add a plant, look at plants 
 
 void Calculator::GetUserChoice()
@@ -59,7 +58,8 @@ void Calculator::GetUserChoice()
 	switch (choice)
 	{
 	case 1:
-		RunProgram(1);
+		//RunProgram(1); // If I call this it asks something twice -- fix
+		GetPlantInfo();
 		break;
 
 	case 2:
@@ -88,12 +88,13 @@ void Calculator::GetPlantInfo() // Name of plant
 
 
 	//system("cls");
-
+	cout << "HERE" << endl;
 
 	cout << "How many plants do you want to record? : ";
+	cout << "HERE AGAIN" << endl;
+
 	cin >> numberOfPlants;
-
-
+	/*
 	for (int i = 0; i >= numberOfPlants; i++)
 	{
 		cout << "What is the plant name? : ";
@@ -103,7 +104,10 @@ void Calculator::GetPlantInfo() // Name of plant
 		cout << "What is the plant size?: ";
 		cin >> gallons;
 
-	}
+	} */
+
+	cout << "Exit" << endl;
+	
 }
 
 // Asks if the client wants a discount. If so, calculate
@@ -148,7 +152,6 @@ void Calculator::GetPrices()
 	double clientPrice			= 0; // Price the client buys the plant for
 
 
-
 	// Getting the price that people normally pay for it
 	cout << "Enter the price that people normally pay : ";
 	cin >> originalProductPrice;
@@ -164,11 +167,11 @@ void Calculator::GetPrices()
 	cin >> contractorsPrice;
 	cout << endl;
 
-	// Calculations
+	//-------------------------- Calculations -------------------------------
 
 	profitMargin = (originalProductPrice - contractorsPrice) + clientPrice;
 
-	//--------------------
+	//-----------------------------------------------------------------------
 
 	cout << "The profit margin is: " << profitMargin;
 

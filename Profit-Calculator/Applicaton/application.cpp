@@ -21,16 +21,14 @@
 
 
 int main()
-{
+{		
 	Tools *tools = new Tools;
 
 	Calculator *program = new Calculator;
 
-
 	tools->StartingAnimation();
 
-	program->RunProgram(0);
-
+	program->GetPlantInfo();
 
 	delete tools;
 	delete program;

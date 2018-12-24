@@ -1,7 +1,6 @@
 #include "pch.h"
 #include "Tools.h"
 
-
 Tools::Tools()
 {
 }
@@ -63,6 +62,13 @@ void Tools::ReadKeys(std::string &var, int tellPlantsChoice) // takes in var to 
 
 	int count = 0;
 
+	std::string x; // Declaring x so it can store a value from text file
+
+	// Getting the first var from text
+	in >> x;
+
+	std::cout << x;
+
 	if (tellPlantsChoice == 1)
 	{
 		while (!in.eof()) // While not equal to end of file (eof)
@@ -96,7 +102,6 @@ void Tools::ReadKeys(std::string &var, int tellPlantsChoice) // takes in var to 
 	in.close();
 }
 
-
 void Tools::WriteKeys(std::string &var)
 {
 	std::ofstream out;
@@ -107,6 +112,7 @@ void Tools::WriteKeys(std::string &var)
 
 	out.close();
 }
+
 
 Tools::~Tools()
 {
